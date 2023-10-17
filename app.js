@@ -9,10 +9,16 @@ function getRandomQoute(){
         .then(data => data.content)
 }
 
+
+
 async function getNextQoute (){
     const qoute  = await getRandomQoute()
     qouteElement.innerHTML = qoute;
-    
+    qoute.splite('').forEach(character => {
+        const characterSpan = document.createElement('span')
+        characterSpan.innerHTML(character)
+        qouteElement.appendChild(characterSpan)
+    })
 
     qouteInput.value = null;
 }
