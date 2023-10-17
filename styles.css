@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: cornflowerblue;
+    background: linear-gradient(135deg, #02AABD , #00CDAC);
 }
 .container{
     background-color: rgb(233, 238, 216);
