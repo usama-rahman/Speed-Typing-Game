@@ -4,7 +4,18 @@ const qouteElement = document.getElementById('qouteDispaly');
 const qouteInput = document.getElementById('qouteInput');
 
 qouteInput.addEventListener('input', () => {
-
+    const arrayQoute = qouteElement.querySelectorAll('span')
+    const arrayValue = qouteInput.value.split('')
+    arrayQoute.forEach((characterSpan, index) => {
+        const character = arrayValue [index]
+        if(character === characterSpan.innerText){
+            characterSpan.classList.add('correct')
+            characterSpan.classList.remove('incorrect')
+        }else{
+            characterSpan.classList.remove('correct')
+            characterSpan.classList.add('incorrect')
+        }
+    })
 })
 
 function getRandomQoute(){
@@ -21,7 +32,7 @@ async function getNextQoute (){
     qoute.split('').forEach(character => {
         const characterSpan = document.createElement('span')
         characterSpan.classList.add('correct')
-        characterSpan.innerHTML = character
+        characterSpan.innerText = character
         qouteElement.appendChild(characterSpan)
     })
 
