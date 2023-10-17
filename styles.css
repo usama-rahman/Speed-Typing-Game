@@ -11,7 +11,7 @@ body{
     background-color: cornflowerblue;
 }
 .container{
-    background-color: rgb(95, 185, 133);
+    background-color: rgb(158, 172, 110);
     padding: 1rem;
     border-radius: .5rem;
     width: 700px;
@@ -21,7 +21,7 @@ body{
     position: absolute;
     top: 4rem;
     font-size: 3rem;
-    color: rgb(207, 147, 129);
+    color: rgb(38, 53, 3);
     font-weight: bold;
 }
 .qoute-display{
@@ -42,4 +42,12 @@ body{
 }
 .qoute-input:focus{
     border-color:black;
+}
+
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+    text-decoration: underline;
 }
