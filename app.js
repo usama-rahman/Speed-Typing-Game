@@ -19,4 +19,4 @@ async function getNextQoute (){
 
 getNextQoute()
 
-// 
+// Working
