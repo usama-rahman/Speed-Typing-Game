@@ -21,6 +21,25 @@ body{
     position: absolute;
     top: 4rem;
     font-size: 3rem;
-    color: antiquewhite;
-    font-weight: 100;
+    color: rgb(207, 147, 129);
+    font-weight: bold;
+}
+.qoute-display{
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+
+}
+.qoute-input{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid pink;
+    width: 100%;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.qoute-input:focus{
+    border-color:black;
 }
